@@ -1,0 +1,13 @@
+{% extends "project_base.jhtml" %}
+{% block content %}
+<h5>This site</h5>
+<p>
+    This site is built using Python into a static site. You can see the code for it on Github.
+</p>
+<p>
+    Code: <a href="https://github.com/berkowitze/staticmainsite">Github</a>
+</p>
+<p>
+    Website: <a href="http://www.eliasberkowitz.com">eliasberkowitz.com</a>
+</p>
+{% endblock %}

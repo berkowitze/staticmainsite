@@ -169,6 +169,10 @@ body.faded {
 	transition: opacity .6s .2s;
 }
 
+#projects-div {
+	transition: max-height 1s linear;
+}
+
 .content-card:not(.active) {
 	opacity: 0;
 	-moz-user-select: none; 
@@ -228,7 +232,7 @@ ul#stuff-I-do li, ul#interests li {
 	}
 }
 
-img {
+img#me {
 	width: 8em;
 	transform: rotateY(180deg);
 	float:right;
@@ -246,4 +250,32 @@ p.no-bottom-margin {
     border-radius: 2px;
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
     background-color: #FFFFFF !important;
+}
+
+span.project-link {
+	text-decoration: underline;
+}
+
+span.project-link:hover {
+	cursor: pointer;
+	/*opacity: 1;
+	transition: opacity 1s linear;*/
+}
+
+.project.untoggled {
+	/*max-height: 0px;*/
+	/*transition: max-height 1s linear;*/
+	display: none;
+/*	opacity: 0;
+	height: 0;
+	transition: opacity 1s linear;
+	z-index: -999;*/
+}
+
+.back-btn:hover {
+	cursor: pointer;
+}
+
+#project-list li {
+	margin: 0.7em;
 }

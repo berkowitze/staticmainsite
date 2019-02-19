@@ -1,0 +1,11 @@
+{% extends "project_base.jhtml" %}
+{% block content %}
+<h5>Life Percent Website</h5>
+<p>
+    In 2015, I redesigned Melanie Falick's blog-style Squarespace-based website.
+</p>
+<p>
+    Website: <a href="http://melaniefalick.com">melaniefalick.com</a>
+</p>
+<img src='media/melanie_falick.png' height='70%' width='70%'/>
+{% endblock %}

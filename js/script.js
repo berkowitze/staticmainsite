@@ -1,3 +1,5 @@
+TESTING = false;
+
 function typeWord(word, div, I1, I2, done, continueDelay) {
 	letters = word.split('');
 	letterTyper = function(i) {
@@ -53,8 +55,14 @@ function initPage() {
 		navDiv.append(center);
 		if (navItem) {
 			time = calcTime(navItem, 60, 30);
-			typeWord(navItem, center, 40, 20, undefined, 60);
-			setTimeout(function(){addNavItem(i+1);}, (time + 50));
+			if (TESTING) {
+				typeWord(navItem, center, 3, 3, undefined, 3);
+				setTimeout(function(){addNavItem(i+1);}, 5);
+			}
+			else {
+				typeWord(navItem, center, 40, 20, undefined, 60);
+				setTimeout(function(){addNavItem(i+1);}, (time + 50));
+			}
 		}
 		else {
 			center.remove();
@@ -91,6 +99,20 @@ function calcTime(word, I1, I2) {
 	return time;
 }
 
+function calculateHeights() {
+	about = $('#about-div');
+	resume = $('#resume-div');
+	projects = $('#projects-div');
+	contact = $('#contact-div');
+	topHeight = about.height() + toNumb(about.css('padding-bottom')) + toNumb(about.css('margin-bottom'));
+	aboutTrans = 0;
+	resumeTrans = topHeight + 2 * toNumb(resume.css('margin-top'));
+	projectsTrans = resumeTrans + resume.height() + 2 * toNumb(projects.css('margin-top')) +
+		toNumb(resume.css('margin-bottom')) + toNumb(resume.css('padding-bottom'));
+	contactTrans = projectsTrans + projects.height() + 2 * toNumb(contact.css('margin-top')) + 
+		toNumb(projects.css('margin-bottom')) + toNumb(resume.css('padding-bottom'));
+}
+
 function nameAndNavDone() {
 	$('#name-div').css('margin-right', '');
 	$('div.nav-buttons-transition').removeClass('nav-buttons-transition').addClass('nav-buttons-final sliding-u-l-r');
@@ -106,22 +128,14 @@ function nameAndNavDone() {
 	$('#content-div').css('width', (((docWidth - navWidth) / docWidth * 100) - 20) + '%');
 	$('#content-div').addClass('content-div-after active-tab');
 	$('#content-div').attr('style', $('#content-div').attr('style') + ' transform: translateX(0%) !important');
-	about = $('#about-div');
-	resume = $('#resume-div');
-	projects = $('#projects-div');
-	contact = $('#contact-div');
-	topHeight = about.height() + toNumb(about.css('padding-bottom')) + toNumb(about.css('margin-bottom'));
-	aboutTrans = 0;
-	resumeTrans = topHeight + 2 * toNumb(resume.css('margin-top'));
-	projectsTrans = resumeTrans + resume.height() + 2 * toNumb(projects.css('margin-top')) +
-		toNumb(resume.css('margin-bottom')) + toNumb(resume.css('padding-bottom'));
-	contactTrans = projectsTrans + projects.height() + 2 * toNumb(contact.css('margin-top')) + 
-		toNumb(projects.css('margin-bottom')) + toNumb(resume.css('padding-bottom'));
+	calculateHeights()
 	setTimeout(function(){$('.About').addClass('active-tab-link')}, 200);
 }
 
 function openDiv(x) {
 	button = $(x);
+	calculateHeights();
+	debugger;
 	if (!button.hasClass('active-tab-link')) {
 		button.siblings('.active-tab-link').removeClass('active-tab-link');
 		button.addClass('active-tab-link');
@@ -149,7 +163,7 @@ function openDiv(x) {
 			else {
 				translateHeight = contactTrans;
 			}
-			translate = ' transform: translate(0%, ' + (translateHeight * -1) + 'px) !important'
+			translate = ' transform: translate(0%, ' + (-translateHeight) + 'px) !important'
 			$('#content-div').css('transform', '');
 			contentDiv = $('#content-div');
 			contentDiv.attr('style', contentDiv.attr('style') + translate);
@@ -160,7 +174,25 @@ function openDiv(x) {
 	}
 }
 
-function start() {
+function projectTransition(to_id) {
+	if (to_id[0] != '#') {
+		to_id = '#' + to_id;
+	}
+
+	to = $(to_id);
+	from = $('.project.toggled');
+
+	// to.addClass('active');
+	// from.removeClass('active');
+	from.removeClass('toggled');
+	to.addClass('toggled');
+	from.fadeOut(500, function() {
+		to.fadeIn(500, function() {
+		});
+	});
+}
+
+function start(name) {
 	//Get doc dimensions and name/nav divs and templates
 	doc = $(document);
 	docWidth = doc.width();
@@ -199,12 +231,13 @@ function start() {
 	//Remove template divs and initiate page functions
 	nameTemplate.remove();
 	navTemplate.remove();
-    setTimeout(function(){
-        typeWord('ELIAS BERKOWITZ', nameDiv, 120, 40, initPage, 150);
-    }, 100);
+	if (TESTING) {
+	    typeWord(name, nameDiv, 2, 2, initPage, 2);
+	}
+	else {
+	    setTimeout(function(){
+	        typeWord(name, nameDiv, 120, 40, initPage, 150);
+	    }, 100);
+	}
 	
 }
-
-$(document).ready(function() {
-	start();
-});

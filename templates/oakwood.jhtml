@@ -1,0 +1,25 @@
+{% extends "project_base.jhtml" %}
+{% block content %}
+<h5>Work for Oakwood Friends School</h5>
+<p>
+    In 2015, I worked for Oakwood Friends School, the Quaker school in upstate New York I had just graduated from. I developed a series of web apps to facilitate student and faculty life using Google Web Apps. Mock-ups of the apps are linked below.
+    <li>
+        <a href="https://script.google.com/macros/s/AKfycbwQq3rq1L5T7SZcqMpY4GRm45uqx-1MBKhIjGg6Oek6o9_bwPI/exec">Student Event Signup Page</a>: allows students to signup for organized events.
+    </li>
+    <li>
+        <a href="https://script.google.com/macros/s/AKfycbwW1BqWkC3ORfZ7iYBQV19dtC1gMT3RXR7fXEpj4OGdsJ6zWZxA/exec">Faculty Event Management Page</a>: Allows faculty to create, organize, and manage student events.
+    </li>
+    <li>
+        <a href="https://script.google.com/macros/s/AKfycbzSfsieFEkYHI7J9qq20v6l-42bJ_HpvRLd1crMBEIlDLl4Gb8/exec">Faculty Vehicle Signout Form</a>: allows faculty to choose a school vehicle to checkout for a length of time of their choice.
+    </li>
+    <li>
+        <a href="https://script.google.com/macros/s/AKfycbxF4snfGppPXvRWeT5vc7wxwuHrEsPsqNyJtmPG1iAZE-WNRTHo/exec">Faculty Reimbursement Request Form</a>: allows faculty to request reimbursement for purchases.
+    </li>
+    <li>
+        <a href="https://script.google.com/macros/s/AKfycbw3lV3IruKJKck9Vkk_1aMEjyD82kJvPiEP51NFzQ/exec">Student Bank</a>: allows faculty to internally manage student finances.
+    </li>
+</p>
+<p>
+    Code: <a href="https://drive.google.com/drive/folders/0B_JBWyS9f9RlfmdOSFRJbFR1UWdnU0RJSlkwaFdyQi1TaEM0aF9UM2NGVzA0ZFRwQ3UtMms?usp=sharing">Google Drive</a>
+</p>
+{% endblock %}

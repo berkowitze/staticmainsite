@@ -1,0 +1,17 @@
+<div id='contact-div' class='content-card card green white'>
+  <table>
+    <tr>
+      <td>Email:</td>
+      <td><a href='mailto:{{ config.email }}' target='_self'>{{ config.email }}</a></td>
+    </tr>
+    <tr>
+      <td>Phone:</td>
+      <td><a href='tel:18455549941'>+1 (845)554-9941</a></td>
+    </tr>
+    <tr>
+      <td>Address:</td>
+      <td>Elias Berkowitz<br/>69 Brown St. Box #5472<br/>Providence RI 02912</td>
+    </tr>
+  </table>
+</div>
+</div>

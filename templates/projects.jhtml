@@ -1,0 +1,14 @@
+<div class='content-card card purple white' id='projects-div'>
+  <div class='project toggled' id='project-main'>
+    <ul id='project-list'>
+    {% for id, path, descr in config.projects %}
+      <li>{{ descr }} (<span data-target='project-{{ id }}' class='project-link'>see more</span>).</li>
+    {% endfor %}
+    </ul>
+  </div>
+  {% for id, path, _ in config.projects %}
+  <div class='project untoggled' id='project-{{ id }}'>
+    {% include path %}
+  </div>
+  {% endfor %}
+</div>

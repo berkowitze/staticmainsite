@@ -1,0 +1,13 @@
+{% extends "project_base.jhtml" %}
+{% block content %}
+<h5>HVeto</h5>
+<p>
+    In the summer of 2016, I worked with the noise detection group at <a href="https://www.ligo.caltech.edu/">LIGO</a> (Laser Interfrometric Gravitational-wave Observatory). HVeto, or 'Hierarchical Veto', is an algorithm used by LIGO to rate how significantly correlated noise in channels measuring external sourses (for instance quantum or seismic) is to noise in the main gravitational wave detector. Signals can be filtered out using this measure of correlation. I helped to implement and optimize this method.
+</p>
+<p>
+    Code: <a href="https://github.com/gwdetchar/hveto">Github</a>
+</p>
+<p>
+    Poster of my work: <a href="media/poster.pdf">link</a>
+</p>
+{% endblock %}

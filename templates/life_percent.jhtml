@@ -1,0 +1,14 @@
+{% extends "project_base.jhtml" %}
+{% block content %}
+<h5>Life Percent Website</h5>
+<p>
+    This is the first website I ever made; it is a static HTML/Javascript/CSS site. It shows the user the percentage of their life that has passed.
+</p>
+<p>
+    Website: <a href="http://yourlifepercent.com">yourlifepercent.com</a>
+</p>
+<p>
+    Code: <a href="https://github.com/berkowitze/lifepercent">Github</a>
+</p>
+<img src='media/life-percent.png' height='70%' width='70%'/>
+{% endblock %}
