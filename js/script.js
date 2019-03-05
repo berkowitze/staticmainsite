@@ -1,4 +1,4 @@
-TESTING = false;
+TESTING = true;
 
 function typeWord(word, div, I1, I2, done, continueDelay) {
 	letters = word.split('');
@@ -135,7 +135,6 @@ function nameAndNavDone() {
 function openDiv(x) {
 	button = $(x);
 	calculateHeights();
-	debugger;
 	if (!button.hasClass('active-tab-link')) {
 		button.siblings('.active-tab-link').removeClass('active-tab-link');
 		button.addClass('active-tab-link');

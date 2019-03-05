@@ -1,5 +1,7 @@
 <div id='about-div' class='content-card card white active'>
-  <img id='me' src='media/picture.jpg' alt='face-pic'/>
+  {% if not mobile %}
+    <img id='me' src='media/picture.jpg' alt='face-pic'/>
+  {% endif %}
   <p class='no-bottom-margin'>
     I am a junior at Brown University and plan to receive a Bachelor of Science in Applied Mathematics in 2019. I am interested in using math to research topics in aerodynamics, geology, and climate science.
   </p>

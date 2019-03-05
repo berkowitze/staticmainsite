@@ -1,117 +1,281 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-    <link rel='stylesheet' type='text/css' href='css/materialize.min.css' media='screen,projection'>
-    <link rel='stylesheet' type='text/css' href='css/mobile-style.css'/>
-    <script type='text/javascript' src='js/jquery-2.1.4.min.js'></script>
-    <!--<script type='text/javascript' src='js/script.js'></script>-->
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
-    <base target="_blank">
-    <title>Elias Berkowitz</title>
-    <link rel="shortcut icon" type="image/png" href='favicon.png'>
-    <meta name='description' content="Elias Berkowitz's (Brown University) personal website">
-    <meta name="author" content="Elias Berkowitz">
-    <meta name="keywords" content="Berkowitz, programmer, Elias Berkowitz">
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-        ga('create', 'UA-72224223-1', 'auto');
-        ga('send', 'pageview');
-    </script>
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <link rel='stylesheet' type='text/css' href='css/materialize.min.css' media='screen,projection'>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script type='text/javascript' src='js/jquery-2.1.4.min.js'></script>
+  <script type='text/javascript' src='js/script.js'></script>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
+  <base target="_blank">
+  <title>Elias Berkowitz</title>
+  <link rel="shortcut icon" type="image/png" href='favicon.png'>
+  <link rel='stylesheet' type='text/css' href='css/mobile.css'/>
+  <meta name='description' content="Elias Berkowitz personal website">
+  <meta name="author" content="Elias Berkowitz">
+  <meta name="keywords" content="Elias Berkowitz, Berkowitz, Eli Berkowitz, Programming, Applied Mathematics, Computer Science Education, Education">
+  <script>
+    (function(i,s,o,g,r,a,m){i.GoogleAnalyticsObject=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m);
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-72224223-1', 'auto');
+    ga('send', 'pageview');
+  </script>
 </head>
-<body class='grey lighten-4 row'>
-    <div class='container-div'>
-        <div class='card white' id='name-div'>Elias Berkowitz</div>
-        <div id='content-div'>
-            <div id='about-div' class='content-card card white'>
-                <span class='card-title'>About Me</span>
-                <p class='no-bottom-margin'>
-                    I am a junior at Brown University and plan to receive a Bachelor of Science in Applied Mathematics in 2019. I am interested in using math to research topics in aerodynamics, geology, and climate science.
-                </p>
-                <p>
-                    Me and two friends friends are currently working to start Brown's first experimental rocketry club, working with Brown's chapter of the <a href='http://seds.org/'>SEDS</a>. Over the 2017 summer, we developed a strong and consistent solid fuel mixture and motor geometry, and have simultaenously developed a custom flight computer. The goal is to stabilize the rocket's attitude and automatically deploy a parachute for recoverable flights. We are currently applying for funding to make motors and nozzles out of steel using the CNC Lathe in the Brown Design Workshop.
-                </p>
-                <p>
-                    During the 2017 summer, I worked in the Fox-Kemper Physical Oceanography lab, developing a backward Euler solver for arbitrary systems of stochastic differential equations. I also helped prepare for the 2017 <a href='https://boltatbrown.wordpress.com'>Brown Outdoor Leadership Training</a> fall backpacking trip, organizing, purchasing, and dividing the food for 180 sophomore, transfers, and RUE students to go on a week-long backpacking trip in late August. I also led a trip with 8 sophomores and transfer students!
-                </p>
-                <p>
-                    I also enjoy web development, and have worked extensively with Google Apps Script. You can see my projects in the Projects tab on the left.
-                <div>
-                    <p class='no-margin'>Outside of math, coding and rocketry, I also:</p>
-                    <ul id='stuff-I-do' class='no-margin'>
-                        <li>Play classical piano.</li>
-                        <li>Sleep.</li>
-                        <li>TA the introductory Computer Science course at Brown, <a href="http://cs.brown.edu/courses/csci0170/">CS17</a></li>
-                        <li>Enjoy biking, hiking and backpacking (or anything outdoors, really).</li>
-                        <li>Speak Portuguese!</li>
-                    </ul>
-                </div>
-                <p>Please hire me.</p>
-            </div>
-            <div id='resume-div' class='content-card card white'>
-                <span class='card-title'>Resum&eacute;</span>
-                <p>My resum&eacute; can be accessed <a href='media/Resume.pdf' target='_blank'>here.</a>
-            </div>
-            <div id='projects-div' class='content-card card purple white'>
-                <span class='card-title'>Projects</span><br/>
-                This is a list of code projects I have worked on.
-                <ul id='code-projects'>
-                    <li><a href='https://github.com/IzzyBrand/explosive-bakery'>github.com/IzzyBrand/explosive-bakery</a> - In progress. This is the code base for the rocketry club me and two friends, Izzy Brand and Ben Shanahan, are working to start. This includes code for a customized thrust testing stand, a flight computer with parachute deployment, and the beginnings of a model for pressure within the motor. In the Fall 2017 semester, we will be working on a PID controller for rocket stabilization attempting to gimbal fins.</li>
-                    <li><a href='https://github.com/hveto/hveto'>github.com/hveto/hveto</a> - HVeto, or 'Hierarchical Veto', is a method used at LIGO to rate how significantly correlated noise in channels devoted to external sourses (for instance quantum or seismic) is to noise in the main gravitational wave detector. Signals can be filtered out using this measure of correlation. I helped to implement and improve this method.</li>
-                    <li><a href='https://github.com/berkowitze/pysde'>github.com/berkowitze/pysde</a> - Implemented a backward Euler solver for systems of nonlinear equations.
-                </ul>
-                Below is a list of websites I have worked on.
-                <ul id='website-projects'>
-                    <li><a href='https://github.com/berkowitze'
-                    <li><a href='http://www.oakwoodfriends.org'>oakwoodfriends.org</a> - Job. School website.</li>
-                    <li><a href='http://www.lifepercent.com'>lifepercent.com</a> - Independent. Estimates the percentage of your life that has passed.</li>
-                    <li><a href='http://www.melaniefalick.com'>melaniefalick.com</a> - Job. Personal blog. Created with Squarespace.</li>
-                </ul>
-                Below are several mockups of web apps I built for Oakwood Friend School.
-                <ul id='oakwood-projects'>
-                    <li>
-                        <ul>Student Events - These two apps provide a way for students to sign up for events happening throughout the year. 
-                            Faculty can create and manage events, adding trip costs and managing who has paid, sending group emails, etc.
-                            <li><a href='https://script.google.com/macros/s/AKfycbwQq3rq1L5T7SZcqMpY4GRm45uqx-1MBKhIjGg6Oek6o9_bwPI/exec'>Student-end</a></li>
-                            <li><a href='https://script.google.com/macros/s/AKfycbwW1BqWkC3ORfZ7iYBQV19dtC1gMT3RXR7fXEpj4OGdsJ6zWZxA/exec'>Faculty End</a></li>
-                        </ul>
-                    </li>
-                    <li><a href='https://script.google.com/macros/s/AKfycbz2Eu0KHHggSb7R5f_OQS8v8Fr5dKPspSE1_-SXL3FaG-SBhhGZ/exec'>Bank Management</a> - 
-                        Provides a way for administrators to manage students withdrawing money from their student bank accounts.</li>
-                    <li><a href='https://script.google.com/macros/s/AKfycbzSfsieFEkYHI7J9qq20v6l-42bJ_HpvRLd1crMBEIlDLl4Gb8/exec'>Vehicle Signout</a> - 
-                        Allows faculty to sign out a school vehicle for any amount of time as long as it does not overlap with another booking.</li>
-                    <li>
-                        <ul>Faculty Reimbursemenrt Request App - Allows faculty to submit a reimbursement request. They submit a picture of the receipt; from there, 
-                            the faculty and division chairs confirm the reimbursement. After the two confirmations, the request is sent to the finance department.
-                            <li><a href='https://script.google.com/macros/s/AKfycbxF4snfGppPXvRWeT5vc7wxwuHrEsPsqNyJtmPG1iAZE-WNRTHo/exec'>Request Form</a></li>
-                            <li><a href='https://script.google.com/macros/s/AKfycbxF4snfGppPXvRWeT5vc7wxwuHrEsPsqNyJtmPG1iAZE-WNRTHo/exec?id=1439441842672'>Confirmation Form</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-                <div id='contact-div' class='content-card card green white'>
-                    <span class='card-title'>Contact</span>
-                    <table>
-                        <tr>
-                            <td>Email:</td>
-                            <td><a href='mailto:elias_berkowitz@brown.edu' target='_self'>elias_berkowitz@brown.edu</a></td>
-                        </tr>
-                        <tr>
-                            <td>Phone:</td>
-                            <td><a href='tel:18455549941'>+1 (845)554-9941</a></td>
-                        </tr>
-                        <tr>
-                            <td>Address:</td>
-                            <td>Elias Berkowitz<br/>69 Brown St. Box #5472<br/>Providence RI 02912</td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-        </div>
+<body class='row'>
+  <div class='container-div'>
+    <div id='header'>
+      <div id='name-div' class='name-div'>Elias Berkowitz</div>
+      <ul id='navbar'>
+        <li><span data-target='#about-div' target='_self'>About</a></li>
+        <li><span data-target='#resume-div' target='_self'>Resum&eacute;</a></li>
+        <li><span data-target='#projects-div' target='_self'>Projects</a></li>
+        <li><span data-target='#contact-div' target='_self'>Contact</a></li>
+      </ul>
+    </div>
+    <div id='content-div'>
+      
+        <h5>About</h5>
+        <div id='about-div' class='content-card card white active'>
+  
+  <p class='no-bottom-margin'>
+    I am a junior at Brown University and plan to receive a Bachelor of Science in Applied Mathematics in 2019. I am interested in using math to research topics in aerodynamics, geology, and climate science.
+  </p>
+  <p>
+    Me and two friends friends are currently working to start Brown's first experimental rocketry club, working with Brown's chapter of the <a href='http://seds.org/'>SEDS</a>. Over the 2017 summer, we developed a strong and consistent solid fuel mixture and motor geometry, and have simultaenously developed a custom flight computer. The goal is to stabilize the rocket's attitude and automatically deploy a parachute for recoverable flights. We are currently applying for funding to make motors and nozzles out of steel using the CNC Lathe in the Brown Design Workshop.
+  </p>
+  <p>
+    During the 2017 summer, I worked in the Fox-Kemper Physical Oceanography lab, developing a backward Euler solver for arbitrary systems of stochastic differential equations. I also helped prepare for the 2017 <a href='https://boltatbrown.wordpress.com'>Brown Outdoor Leadership Training</a> fall backpacking trip, organizing, purchasing, and dividing the food for 180 sophomore, transfers, and RUE students to go on a week-long backpacking trip in late August. I also led a trip with 8 sophomores and transfer students!
+  </p>
+  <p>
+    I also enjoy web development, and have worked extensively with Google Apps Script. You can see my projects in the Projects tab on the left.
+    <div>
+      <p class='no-margin'>Outside of math, coding and rocketry, I also:</p>
+      <ul id='stuff-I-do' class='no-margin'>
+        <li>Play classical piano.</li>
+        <li>Making rockets from scratch and launching them.</li>
+        <li>Sleep.</li>
+        <li>Enjoy biking, hiking and backpacking (or anything outdoors, really).</li>
+        <li>Speak Portuguese!</li>
+      </ul>
+    </div>
+    <p>Please hire me.</p>
+  </div>
+      
+        <h5>Resum&eacute;</h5>
+        <div id='resume-div' class='content-card card white'>
+  <p>My resum&eacute; can be accessed <a href='media/Resume.pdf' target='_blank'>here.</a>
+</div>
+      
+        <h5>Projects</h5>
+        <div class='content-card card purple white' id='projects-div'>
+  <div class='project toggled' id='project-main'>
+    <ul id='project-list'>
+    
+      <li>Create and observe your own solar system (<span data-target='project-exosim' class='project-link'>see more</span>).</li>
+    
+      <li>Grading app for computer science courses at Brown University (<span data-target='project-grading-app' class='project-link'>see more</span>).</li>
+    
+      <li>Flask web app developed to provide an API for testing rocket motors and visualizing thrust results (<span data-target='project-thrust-test' class='project-link'>see more</span>).</li>
+    
+      <li>Work for LIGO (Laser Interfrometric Gravitational-Wave Observatory) (<span data-target='project-hveto' class='project-link'>see more</span>).</li>
+    
+      <li>Work for Oakwood Friends School (<span data-target='project-oakwood' class='project-link'>see more</span>).</li>
+    
+      <li>This website (<span data-target='project-this_site' class='project-link'>see more</span>).</li>
+    
+      <li>Redesign of Melanie Falick's website (<span data-target='project-melanie-falick' class='project-link'>see more</span>).</li>
+    
+      <li>Life Percent Website: Shows the user the percent of their life that has passed (<span data-target='project-life-percent' class='project-link'>see more</span>).</li>
+    
+    </ul>
+  </div>
+  
+  <div class='project untoggled' id='project-exosim'>
+    <i class='back-btn material-icons'>keyboard_backspace</i>
+
+
+<h5>Exosim</h5>
+<p>
+    This website (written in pure Javascript using the processing p5.js library) allows you to create your own solar system. You can see the planets orbiting their star - all objects interact with each other gravitationally. Additionally, you can see what the data measured on Earth to observe the exoplanets would look like as the planets block the light of their star when they pass in front of it.
+</p>
+<p>
+    Website: <a href="https://angry-kepler-eeadb9.netlify.com">angry-kepler-eeadb9.netlify.com</a>
+</p>
+<p>
+    Github: <a href="https://github.com/berkowitze/exosim">berkowitze/exosim</a>
+</p>
+<p>
+    <img src='media/exosim.png' width="55%" height="55%"/>
+</p>
+<p>
+</p>
+
+  </div>
+  
+  <div class='project untoggled' id='project-grading-app'>
+    <i class='back-btn material-icons'>keyboard_backspace</i>
+
+
+<h5>CS Course Grading App</h5>
+<p>
+    I developed a grading app for use in <a href="https://cs.brown.edu/courses/csci0111/">CSCI0111 in Fall 2018</a>, a course I was a head TA of and helped develop. The app allows computer science courses to handle student handin, automated and commented grading, sending grade reports to students, and manage grades in a streamlined, customizable, and FERPA-compliant manner.
+</p>
+<p>
+    Code: <a href="https://github.com/berkowitze/cs-course">Github</a>
+</p>
+<img src='media/grading-app.png' height='70%' width='70%'/>
+
+  </div>
+  
+  <div class='project untoggled' id='project-thrust-test'>
+    <i class='back-btn material-icons'>keyboard_backspace</i>
+
+
+<h5>Thrust Test App</h5>
+<p>
+    Me and two friends have become very interested in rocket technology. We began testing different solid fuel mixtures in 2017 to find a fuel with optimal thrust. In addition, we worked on automatic parachute deployment on the rocket and have an goal of using actuated canards to keep rockets stable during ascent. To faciliate the thrust test process, I built a web app to easily log new tests from our test stand and visualize the results.
+</p>
+<p>
+    Code: <a href="https://github.com/IzzyBrand/explosive-bakery">Github</a>
+</p>
+<img src='media/thrust-test.png' height='70%' width='70%'/>
+
+  </div>
+  
+  <div class='project untoggled' id='project-hveto'>
+    <i class='back-btn material-icons'>keyboard_backspace</i>
+
+
+<h5>HVeto</h5>
+<p>
+    In the summer of 2016, I worked with the noise detection group at <a href="https://www.ligo.caltech.edu/">LIGO</a> (Laser Interfrometric Gravitational-wave Observatory). HVeto, or 'Hierarchical Veto', is an algorithm used by LIGO to rate how significantly correlated noise in channels measuring external sourses (for instance quantum or seismic) is to noise in the main gravitational wave detector. Signals can be filtered out using this measure of correlation. I helped to implement and optimize this method.
+</p>
+<p>
+    Code: <a href="https://github.com/gwdetchar/hveto">Github</a>
+</p>
+<p>
+    Poster of my work: <a href="media/poster.pdf">link</a>
+</p>
+
+  </div>
+  
+  <div class='project untoggled' id='project-oakwood'>
+    <i class='back-btn material-icons'>keyboard_backspace</i>
+
+
+<h5>Work for Oakwood Friends School</h5>
+<p>
+    In 2015, I worked for Oakwood Friends School, the Quaker school in upstate New York I had just graduated from. I developed a series of web apps to facilitate student and faculty life using Google Web Apps. Mock-ups of the apps are linked below.
+    <li>
+        <a href="https://script.google.com/macros/s/AKfycbwQq3rq1L5T7SZcqMpY4GRm45uqx-1MBKhIjGg6Oek6o9_bwPI/exec">Student Event Signup Page</a>: allows students to signup for organized events.
+    </li>
+    <li>
+        <a href="https://script.google.com/macros/s/AKfycbwW1BqWkC3ORfZ7iYBQV19dtC1gMT3RXR7fXEpj4OGdsJ6zWZxA/exec">Faculty Event Management Page</a>: Allows faculty to create, organize, and manage student events.
+    </li>
+    <li>
+        <a href="https://script.google.com/macros/s/AKfycbzSfsieFEkYHI7J9qq20v6l-42bJ_HpvRLd1crMBEIlDLl4Gb8/exec">Faculty Vehicle Signout Form</a>: allows faculty to choose a school vehicle to checkout for a length of time of their choice.
+    </li>
+    <li>
+        <a href="https://script.google.com/macros/s/AKfycbxF4snfGppPXvRWeT5vc7wxwuHrEsPsqNyJtmPG1iAZE-WNRTHo/exec">Faculty Reimbursement Request Form</a>: allows faculty to request reimbursement for purchases.
+    </li>
+    <li>
+        <a href="https://script.google.com/macros/s/AKfycbw3lV3IruKJKck9Vkk_1aMEjyD82kJvPiEP51NFzQ/exec">Student Bank</a>: allows faculty to internally manage student finances.
+    </li>
+</p>
+<p>
+    Code: <a href="https://drive.google.com/drive/folders/0B_JBWyS9f9RlfmdOSFRJbFR1UWdnU0RJSlkwaFdyQi1TaEM0aF9UM2NGVzA0ZFRwQ3UtMms?usp=sharing">Google Drive</a>
+</p>
+
+  </div>
+  
+  <div class='project untoggled' id='project-this_site'>
+    <i class='back-btn material-icons'>keyboard_backspace</i>
+
+
+<h5>This site</h5>
+<p>
+    This site is built using Python into a static site. You can see the code for it on Github.
+</p>
+<p>
+    Code: <a href="https://github.com/berkowitze/staticmainsite">Github</a>
+</p>
+<p>
+    Website: <a href="http://www.eliasberkowitz.com">eliasberkowitz.com</a>
+</p>
+
+  </div>
+  
+  <div class='project untoggled' id='project-melanie-falick'>
+    <i class='back-btn material-icons'>keyboard_backspace</i>
+
+
+<h5>Life Percent Website</h5>
+<p>
+    In 2015, I redesigned Melanie Falick's blog-style Squarespace-based website.
+</p>
+<p>
+    Website: <a href="http://melaniefalick.com">melaniefalick.com</a>
+</p>
+<img src='media/melanie_falick.png' height='70%' width='70%'/>
+
+  </div>
+  
+  <div class='project untoggled' id='project-life-percent'>
+    <i class='back-btn material-icons'>keyboard_backspace</i>
+
+
+<h5>Life Percent Website</h5>
+<p>
+    This is the first website I ever made; it is a static HTML/Javascript/CSS site. It shows the user the percentage of their life that has passed.
+</p>
+<p>
+    Website: <a href="http://yourlifepercent.com">yourlifepercent.com</a>
+</p>
+<p>
+    Code: <a href="https://github.com/berkowitze/lifepercent">Github</a>
+</p>
+<img src='media/life-percent.png' height='70%' width='70%'/>
+
+  </div>
+  
+</div>
+      
+        <h5>Contact</h5>
+        <div id='contact-div' class='content-card card green white'>
+  <table>
+    <tr>
+      <td>Email:</td>
+      <td><a href='mailto:eliberkowitz@gmail.com' target='_self'>eliberkowitz@gmail.com</a></td>
+    </tr>
+    <tr>
+      <td>Phone:</td>
+      <td><a href='tel:18455549941'>+1 (845)554-9941</a></td>
+    </tr>
+    <tr>
+      <td>Address:</td>
+      <td>Elias Berkowitz<br/>69 Brown St. Box #5472<br/>Providence RI 02912</td>
+    </tr>
+  </table>
+</div>
+</div>
+      
+    </div>
+          
+      </div>
     </body>
+    <script type="text/javascript">
+      $('#navbar').click(function(x) {
+        as = $($(x.target).children('span').context);
+        console.log(as.text());
+        if (as.length != 1) {
+          return;
+        }
+        scrollTo({top: $(as.eq(0).data('target')).offset().top-130, behavior: 'smooth'})
+        
+      });
+    </script>
 <!--
 Copyright November 2015 Elias Berkowitz.
 Coded from scratch.

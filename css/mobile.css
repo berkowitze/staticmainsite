@@ -1,0 +1,51 @@
+body .card {
+    padding: 0.8em;
+    box-shadow: none;
+}
+
+#content-div h5 {
+    padding-left: 0.4em;
+    font-size: 130%;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+#name-div {
+    font-size: 160%;
+    text-align: center;
+    padding-top: 0.3em;
+    color: white;
+}
+
+ul#navbar {
+    display: flex;
+    flex-direction: row;
+}
+
+ul#navbar li {
+    flex-direction: column;
+    margin: 0em 1em;
+    width: 25%;
+    text-align: center;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #606060;
+    color: white;
+    z-index: 999;
+}
+
+#header span {
+    color: white;
+}
+
+#content-div {
+    margin-top: 8em;
+}
+
+.content-card {
+    margin-top: 0em;
+}

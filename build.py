@@ -4,6 +4,7 @@ from jinja2 import Environment, FileSystemLoader
 
 env = Environment(loader=FileSystemLoader('templates'))
 template = env.get_template('index_template.jhtml')
+mobile_template = env.get_template('mobile_template.jhtml')
 
 
 class Config:
@@ -22,7 +23,11 @@ class Config:
                  ('contact.jhtml', 'Contact')
                  ]
 
-    projects = [('grading-app',
+    projects = [('exosim',
+                 'exosim.jhtml',
+                 'Create and observe your own solar system'
+                 ),
+                ('grading-app',
                  'grading_app.jhtml',
                  'Grading app for computer science courses at Brown University'
                  ),
@@ -60,9 +65,12 @@ class Config:
 
 
 rendered_template = template.render(config=Config, mobile=False)
-mobile_template = template.render(config=Config, mobile=True)
+rendered_mobile = mobile_template.render(config=Config, mobile=True)
 
 with open('index.html', 'w') as f:
     f.write(rendered_template)
+
+with open('mobile.html', 'w') as f:
+    f.write(rendered_mobile)
 
 print('recompiled')

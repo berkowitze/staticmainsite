@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <link rel='stylesheet' type='text/css' href='css/materialize.min.css' media='screen,projection'>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script type='text/javascript' src='js/jquery-2.1.4.min.js'></script>
+  <script type='text/javascript' src='js/script.js'></script>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
+  <base target="_blank">
+  <title>{{ config.full_name }}</title>
+  <link rel="shortcut icon" type="image/png" href='favicon.png'>
+  <link rel='stylesheet' type='text/css' href='css/mobile.css'/>
+  <meta name='description' content="{{ config.full_name }} personal website">
+  <meta name="author" content="{{ config.full_name }}">
+  <meta name="keywords" content="{{ config.tags|join(', ') }}">
+  <script>
+    (function(i,s,o,g,r,a,m){i.GoogleAnalyticsObject=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m);
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-72224223-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+</head>
+<body class='row'>
+  <div class='container-div'>
+    <div id='header'>
+      <div id='name-div' class='name-div'>Elias Berkowitz</div>
+      <ul id='navbar'>
+        <li><span data-target='#about-div' target='_self'>About</a></li>
+        <li><span data-target='#resume-div' target='_self'>Resum&eacute;</a></li>
+        <li><span data-target='#projects-div' target='_self'>Projects</a></li>
+        <li><span data-target='#contact-div' target='_self'>Contact</a></li>
+      </ul>
+    </div>
+    <div id='content-div'>
+      {% for link, descr in config.sub_pages %}
+        <h5>{{ descr }}</h5>
+        {% include link %}
+      {% endfor %}
+    </div>
+          
+      </div>
+    </body>
+    <script type="text/javascript">
+      $('#navbar').click(function(x) {
+        as = $($(x.target).children('span').context);
+        console.log(as.text());
+        if (as.length != 1) {
+          return;
+        }
+        scrollTo({top: $(as.eq(0).data('target')).offset().top-130, behavior: 'smooth'})
+        
+      });
+    </script>
+<!--
+Copyright November 2015 {{ config.page_author }}.
+Coded from scratch.
+-->
+</html>
