@@ -1,6 +1,6 @@
 {% extends "project_base.jhtml" %}
+{% block title %}Melanie Falick's Website{% endblock %}
 {% block content %}
-<h5>Life Percent Website</h5>
 <p>
     In 2015, I redesigned Melanie Falick's blog-style Squarespace-based website.
 </p>

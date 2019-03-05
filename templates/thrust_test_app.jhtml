@@ -1,6 +1,6 @@
 {% extends "project_base.jhtml" %}
+{% block title %}Thrust Test App{% endblock %}
 {% block content %}
-<h5>Thrust Test App</h5>
 <p>
     Me and two friends have become very interested in rocket technology. We began testing different solid fuel mixtures in 2017 to find a fuel with optimal thrust. In addition, we worked on automatic parachute deployment on the rocket and have an goal of using actuated canards to keep rockets stable during ascent. To faciliate the thrust test process, I built a web app to easily log new tests from our test stand and visualize the results.
 </p>

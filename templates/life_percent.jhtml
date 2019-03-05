@@ -1,6 +1,6 @@
 {% extends "project_base.jhtml" %}
+{% block title %}Life Percent Website{% endblock %}
 {% block content %}
-<h5>Life Percent Website</h5>
 <p>
     This is the first website I ever made; it is a static HTML/Javascript/CSS site. It shows the user the percentage of their life that has passed.
 </p>

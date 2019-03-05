@@ -1,6 +1,6 @@
 {% extends "project_base.jhtml" %}
+{% block title %}Work for Oakwood Friends School{% endblock %}
 {% block content %}
-<h5>Work for Oakwood Friends School</h5>
 <p>
     In 2015, I worked for Oakwood Friends School, the Quaker school in upstate New York I had just graduated from. I developed a series of web apps to facilitate student and faculty life using Google Web Apps. Mock-ups of the apps are linked below.
     <li>

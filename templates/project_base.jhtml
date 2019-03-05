@@ -1,3 +1,6 @@
-<i class='back-btn material-icons'>keyboard_backspace</i>
+{% if not mobile %}
+    <i class='back-btn material-icons'>keyboard_backspace</i>
+{% endif %}
 
+<h5>{% block title %} {% endblock %}</h5>
 {% block content %} {% endblock %}

@@ -46,12 +46,30 @@
     <script type="text/javascript">
       $('#navbar').click(function(x) {
         as = $($(x.target).children('span').context);
-        console.log(as.text());
         if (as.length != 1) {
           return;
         }
-        scrollTo({top: $(as.eq(0).data('target')).offset().top-130, behavior: 'smooth'})
-        
+        scrollTo(
+          {
+            top: $(as.eq(0).data('target')).offset().top-130,
+            behavior: 'smooth'
+          }
+        );
+      });
+    </script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('.project-link').click(function(event) {
+          var lnk = $(event.target);
+          a = $('#' + lnk.data('target'));
+          a.toggleClass('hidden-project');
+          if (a.hasClass('hidden-project')) {
+            lnk.text('see more');
+          }
+          else {
+            lnk.text('hide');
+          }
+        });
       });
     </script>
 <!--

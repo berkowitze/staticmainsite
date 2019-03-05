@@ -1,6 +1,9 @@
 {% extends "project_base.jhtml" %}
+{% block title %}
+Exosim
+{% endblock %}
+
 {% block content %}
-<h5>Exosim</h5>
 <p>
     This website (written in pure Javascript using the processing p5.js library) allows you to create your own solar system. You can see the planets orbiting their star - all objects interact with each other gravitationally. Additionally, you can see what the data measured on Earth to observe the exoplanets would look like as the planets block the light of their star when they pass in front of it.
 </p>
@@ -8,7 +11,7 @@
     Website: <a href="https://angry-kepler-eeadb9.netlify.com">angry-kepler-eeadb9.netlify.com</a>
 </p>
 <p>
-    Github: <a href="https://github.com/berkowitze/exosim">berkowitze/exosim</a>
+    Code: <a href="https://github.com/berkowitze/exosim">github</a>
 </p>
 <p>
     <img src='media/exosim.png' width="55%" height="55%"/>

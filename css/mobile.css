@@ -49,3 +49,23 @@ ul#navbar li {
 .content-card {
     margin-top: 0em;
 }
+
+.hidden-project {
+    display: none;
+}
+
+.project-link {
+    text-decoration: underline;
+}
+
+.project-link:hover {
+    cursor: pointer;
+}
+
+.project {
+    margin: 0.6em;
+}
+
+.project h5 {
+    padding-left: 0 !important;
+}

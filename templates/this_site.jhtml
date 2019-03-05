@@ -1,6 +1,6 @@
 {% extends "project_base.jhtml" %}
+{% block title %}This site{% endblock %}
 {% block content %}
-<h5>This site</h5>
 <p>
     This site is built using Python into a static site. You can see the code for it on Github.
 </p>
