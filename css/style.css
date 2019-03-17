@@ -229,10 +229,11 @@ ul#stuff-I-do li, ul#interests li {
 }
 
 img#me {
-    width: 8em;
+    width: 25%;
     transform: rotateY(180deg);
     float:right;
-    margin-left: 1em;
+    margin-left: 2em;
+    margin-bottom: 2em;
 }
 
 p.no-bottom-margin {

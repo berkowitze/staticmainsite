@@ -3,6 +3,10 @@ body .card {
     box-shadow: none;
 }
 
+ul#stuff-I-do li {
+    margin-left: 0.75em !important;
+}
+
 #content-div h5 {
     padding-left: 0.4em;
     font-size: 130%;
