@@ -29,6 +29,10 @@ ul#navbar li {
     text-align: center;
 }
 
+ul#navbar li:hover {
+    cursor: pointer;
+}
+
 #header {
     position: fixed;
     top: 0;

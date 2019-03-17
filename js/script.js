@@ -3,7 +3,7 @@ TESTING = false;
 function typeWord(word, div, I1, I2, done, continueDelay) {
 	letters = word.split('');
 	letterTyper = function(i) {
-		letter = letters[i]
+		let letter = letters[i];
 		if (letter) {
 			div.append(letter);
 			if (letter != ' ') {
@@ -17,13 +17,13 @@ function typeWord(word, div, I1, I2, done, continueDelay) {
 		else {
 			div.text(word);
 			if (done != undefined) {
-				setTimeout(done, continueDelay)
+				setTimeout(done, continueDelay);
 			}
 			else {
-				setTimeout(function(){}, continueDelay)
+				setTimeout(function(){}, continueDelay);
 			}
 		}
-	}
+	};
 	letterTyper(0);
 }
 
@@ -68,12 +68,12 @@ function initPage() {
 			center.remove();
 			navTyped();
 		}
-	}
+	};
 	setTimeout(function(){addNavItem(0);}, 1000);
 }
 
 function toNumb(thing) {
-	return Number(thing.replace('px', ''))
+	return Number(thing.replace('px', ''));
 }
 
 function navTyped() {
@@ -118,7 +118,7 @@ function nameAndNavDone() {
 	$('div.nav-buttons-transition').removeClass('nav-buttons-transition').addClass('nav-buttons-final sliding-u-l-r');
 	$('.nav-buttons-final').each(function(){
 		button = $(this);
-		button.attr('onclick', 'openDiv(this)')
+		button.attr('onclick', 'openDiv(this)');
 	});
 	navWidth = $('#nav-container').width();
 	$('#content-div').removeAttr('style');
@@ -128,7 +128,7 @@ function nameAndNavDone() {
 	$('#content-div').css('width', (((docWidth - navWidth) / docWidth * 100) - 20) + '%');
 	$('#content-div').addClass('content-div-after active-tab');
 	$('#content-div').attr('style', $('#content-div').attr('style') + ' transform: translateX(0%) !important');
-	calculateHeights()
+	calculateHeights();
 	setTimeout(function(){$('.About').addClass('active-tab-link')}, 200);
 }
 

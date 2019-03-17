@@ -1,4 +1,4 @@
-<div class='content-card card purple white' id='projects-div'>
+<div class='content-card card white' id='projects-div'>
   <div class='project toggled' id='project-main'>
     <ul id='project-list'>
     {% for id, path, descr in config.projects %}
