@@ -1,0 +1,6 @@
+[[redirects]]
+  from = "/book"
+  to = "https://boiling-dawn-79164.herokuapp.com"
+  force = true
+  status = 200
+  headers = {X-From = "Netlify"}
