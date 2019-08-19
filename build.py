@@ -18,7 +18,7 @@ class Config:
             'Education']
 
     sub_pages = [('about.jhtml', 'About'),
-                 ('resume.jhtml', 'Resum&eacute;'),
+                 ('resume.jhtml', 'R&eacute;sum&eacute;'),
                  ('projects.jhtml', 'Projects'),
                  ('contact.jhtml', 'Contact')
                  ]
