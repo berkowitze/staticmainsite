@@ -39,7 +39,7 @@ div#navbar .navitem:hover {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #c2c2c2;
+    background-image: linear-gradient(rgba(202,209,255,1), #e8f2ff);
     color: black;
     z-index: 999;
     box-shadow: 0px 1px 6px #b3b3b3;
@@ -51,9 +51,11 @@ div#navbar .navitem:hover {
 
 #content-div {
     margin-top: 6em;
+    background-color: #fafefe !important;
 }
 
 .content-card {
+    background-color: #fafefe !important;
     margin-top: 0em;
 }
 
@@ -79,4 +81,20 @@ div#navbar .navitem:hover {
 
 body {
     font-size: 16px;
+    margin-bottom: 0 !important;
+    background-color: #fafefe !important;
+}
+
+#contact-div {
+    margin-bottom: 0;
+}
+
+h5 {
+    text-align: center;
+}
+
+img {
+    display: block;
+    width: 80%;
+    margin: auto;
 }

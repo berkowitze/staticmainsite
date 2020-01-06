@@ -1,7 +1,6 @@
 <div id='about-div' class='content-card card white active'>
-  {% if not mobile %}
-    <img id='me' src='media/god-pic.jpg' alt='face-pic'/>
-  {% endif %}
+    <img id='me' src='media/outdoors.jpg' alt='Picture of me'/>
+
   <p class='no-bottom-margin'>
     I am a recent graduate from Brown University, having received a Bachelor of Science in Applied Mathematics in May 2019. I will be participating in Bard College's Masters of Arts in Teaching program Sep 2019-2021. I am interested in computer science and math education, and using math and computer science to research topics in geology, fluid mechanics, and climate science.
   </p>

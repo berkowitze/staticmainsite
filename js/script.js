@@ -19,9 +19,6 @@ function typeWord(word, div, I1, I2, done, continueDelay) {
 			if (done != undefined) {
 				setTimeout(done, continueDelay);
 			}
-			else {
-				setTimeout(function(){}, continueDelay);
-			}
 		}
 	};
 	letterTyper(0);
@@ -41,12 +38,12 @@ function initPage() {
 	nameDiv = $('#name-div');
 	nameDiv.addClass('new-name-card');
 	nameDiv.addClass('name-transition');
-	navItems = ['About', 'Resum\xE9', 'Projects', 'Contact'];
+	navItems = ['About', 'R\xE9sum\xE9', 'Projects', 'Contact'];
 	addNavItem = function(i) {
 		navItem = navItems[i];
 		center = $('<div>');
 		center.addClass('nav-button unselectable'); //HERE
-		if (navItem != 'Resum\xE9') {
+		if (navItem != 'R\xE9sum\xE9') {
 			center.addClass(navItem);
 		}
 		else {
@@ -79,7 +76,7 @@ function toNumb(thing) {
 function navTyped() {
 	navDiv = $('#nav-div');
 	$('div.nav-button.About').text('About');
-	$('div.nav-button.Resume').text('Resum\xe9');
+	$('div.nav-button.Resume').text('R\xe9sum\xe9');
 	$('div.nav-button.Projects').text('Projects');
 	$('div.nav-button.Contact').text('Contact');
 	navDiv.addClass('nav-transition');
@@ -123,9 +120,9 @@ function nameAndNavDone() {
 	navWidth = $('#nav-container').width();
 	$('#content-div').removeAttr('style');
 	docWidth = $(document).width();
-	newWidth = navWidth / docWidth * 100;
+	newWidth = navWidth / docWidth / 2 * 100;
 	$('#nav-container').css('width', (newWidth) + '%');
-	$('#content-div').css('width', (((docWidth - navWidth) / docWidth * 100) - 20) + '%');
+	$('#content-div').css('width', (((docWidth - navWidth) / docWidth * 100) - 5) + '%');
 	$('#content-div').addClass('content-div-after active-tab');
 	$('#content-div').attr('style', $('#content-div').attr('style') + ' transform: translateX(0%) !important');
 	calculateHeights();

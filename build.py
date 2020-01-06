@@ -18,7 +18,7 @@ class Config:
             'Education']
 
     sub_pages = [('about.jhtml', 'About'),
-                 ('resume.jhtml', 'Resum&eacute;'),
+                 ('resume.jhtml', 'R&eacute;sum&eacute;'),
                  ('projects.jhtml', 'Projects'),
                  ('contact.jhtml', 'Contact')
                  ]
@@ -36,7 +36,7 @@ class Config:
 
                 ('thrust-test',
                  'thrust_test_app.jhtml',
-                 ('Flask web app developed to provide an API for testing '
+                 ('Web app developed to provide an API for testing '
                   'rocket motors and visualizing thrust results [Flask, Raspberry Pi]')
                  ),
 

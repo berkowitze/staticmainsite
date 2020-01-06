@@ -23,7 +23,8 @@
     ga('send', 'pageview');
   </script>
 </head>
-<body class='grey lighten-4 row'>
+<body class='row'>
+  <div id='bg'></div>
   <div class='container-div'>
     <div id='name-div' class='name-div'></div><br class='unselectable'/>
     <div class='absolute-hide' id='name-template'>{{ config.full_name|upper }}</div>

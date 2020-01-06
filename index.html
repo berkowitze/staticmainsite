@@ -23,7 +23,8 @@
     ga('send', 'pageview');
   </script>
 </head>
-<body class='grey lighten-4 row'>
+<body class='row'>
+  <div id='bg'></div>
   <div class='container-div'>
     <div id='name-div' class='name-div'></div><br class='unselectable'/>
     <div class='absolute-hide' id='name-template'>ELIAS BERKOWITZ</div>
@@ -33,7 +34,7 @@
         
         <div class='nav-button'>About</div>
         
-        <div class='nav-button'>Resum&eacute;</div>
+        <div class='nav-button'>R&eacute;sum&eacute;</div>
         
         <div class='nav-button'>Projects</div>
         
@@ -44,9 +45,8 @@
     <div id='content-div' style='display:none;'>
       
         <div id='about-div' class='content-card card white active'>
-  
-    <img id='me' src='media/god-pic.jpg' alt='face-pic'/>
-  
+    <img id='me' src='media/outdoors.jpg' alt='Picture of me'/>
+
   <p class='no-bottom-margin'>
     I am a recent graduate from Brown University, having received a Bachelor of Science in Applied Mathematics in May 2019. I will be participating in Bard College's Masters of Arts in Teaching program Sep 2019-2021. I am interested in computer science and math education, and using math and computer science to research topics in geology, fluid mechanics, and climate science.
   </p>
@@ -68,11 +68,13 @@
 </div>
       
         <div id='resume-div' class='content-card card white'>
-  <p>My resum&eacute; can be accessed <a href='media/Resume.pdf' target='_blank'>here.</a>
+  <p>My r&eacute;sum&eacute; can be accessed <a href='media/Resume.pdf' target='_blank'>here.</a>
 </div>
       
         <div class='content-card card white' id='projects-div'>
   <div class='project toggled' id='project-main'>
+      <img src='media/rocketshell.jpg' id='rocket-img' alt='Rocket shell image'/>
+      
     <ul id='project-list'>
     
       <li>Grading app for computer science courses at Brown University [Flask] (<span data-target='project-grading-app' class='project-link'>see more</span>).</li>
@@ -81,7 +83,7 @@
       <li>Create and observe your own solar system [p5.js] (<span data-target='project-exosim' class='project-link'>see more</span>).</li>
       
     
-      <li>Flask web app developed to provide an API for testing rocket motors and visualizing thrust results [Flask, Raspberry Pi] (<span data-target='project-thrust-test' class='project-link'>see more</span>).</li>
+      <li>Web app developed to provide an API for testing rocket motors and visualizing thrust results [Flask, Raspberry Pi] (<span data-target='project-thrust-test' class='project-link'>see more</span>).</li>
       
     
       <li>Work for LIGO (Laser Interfrometric Gravitational-Wave Observatory) [Python] (<span data-target='project-hveto' class='project-link'>see more</span>).</li>
@@ -283,14 +285,7 @@ Exosim
         </a>
       </td>
     </tr>
-    <tr>
-      <td>Phone:</td>
-      <td><a href='tel:18455549941'>+1 (845)554-9941</a></td>
-    </tr>
-    <tr>
-      <td>Address:</td>
-      <td>Elias Berkowitz<br/>10 Cottage Street<br/>Salt Point, NY 12578</td>
-    </tr>
+    <img src='media/god-pic.jpg' alt='Face picture'/>
   </table>
 </div>
 </div>
