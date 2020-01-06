@@ -23,43 +23,45 @@ class Config:
                  ('contact.jhtml', 'Contact')
                  ]
 
-    projects = [('exosim',
-                 'exosim.jhtml',
-                 'Create and observe your own solar system'
-                 ),
+    projects = [
                 ('grading-app',
                  'grading_app.jhtml',
-                 'Grading app for computer science courses at Brown University'
+                 'Grading app for computer science courses at Brown University [Flask]'
+                 ),
+
+                ('exosim',
+                 'exosim.jhtml',
+                 'Create and observe your own solar system [p5.js]'
                  ),
 
                 ('thrust-test',
                  'thrust_test_app.jhtml',
                  ('Flask web app developed to provide an API for testing '
-                  'rocket motors and visualizing thrust results')
+                  'rocket motors and visualizing thrust results [Flask, Raspberry Pi]')
                  ),
 
                 ('hveto',
                  'hveto.jhtml',
                  ('Work for LIGO '
-                  '(Laser Interfrometric Gravitational-Wave Observatory)')
+                  '(Laser Interfrometric Gravitational-Wave Observatory) [Python]')
                  ),
 
                 ('oakwood',
                  'oakwood.jhtml',
-                 'Work for Oakwood Friends School'),
+                 'Internal-use web apps for Oakwood Friends School [Google Apps Script]'),
 
                 ('this_site',
                  'this_site.jhtml',
-                 'This website'),
+                 'This website [Python, Jinja, Netlify]'),
 
                 ('melanie-falick',
                  'melanie_falick.jhtml',
-                 'Redesign of Melanie Falick\'s website'),
+                 'Redesign of Melanie Falick\'s website [Squarespace]'),
 
                 ('life-percent',
                  'life_percent.jhtml',
                  ('Life Percent Website: Shows the '
-                  'user the percent of their life that has passed')
+                  'user the percent of their life that has passed [Javascript]')
                  )
                 ]
 
