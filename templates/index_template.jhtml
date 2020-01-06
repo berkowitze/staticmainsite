@@ -43,19 +43,27 @@
           
       </div>
       <script type='text/javascript'>
-        $(document).ready(function() {
-          start('{{ config.full_name|upper }}');
-        });
-        $('.project-link').map(function(i, elem) {
-          var e = $(elem);
-          var target = e.data('target');
-          e.click(function(){
-            projectTransition(target);
+        doc = $(document);
+        docWidth = doc.width();
+        docHeight = doc.height();
+        if (docWidth < 500 || docHeight < 440) {
+          document.location = 'mobile.html';
+        }
+        else {
+          $(document).ready(function() {
+            start('{{ config.full_name|upper }}');
           });
-        });
-        $('.back-btn').click(function() {
-          projectTransition('#project-main');
-        });
+          $('.project-link').map(function(i, elem) {
+            var e = $(elem);
+            var target = e.data('target');
+            e.click(function(){
+              projectTransition(target);
+            });
+          });
+          $('.back-btn').click(function() {
+            projectTransition('#project-main');
+          });
+        }
       </script>
     </body>
 <!--
