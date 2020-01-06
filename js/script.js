@@ -135,7 +135,7 @@ function openDiv(x) {
 	if (!button.hasClass('active-tab-link')) {
 		button.siblings('.active-tab-link').removeClass('active-tab-link');
 		button.addClass('active-tab-link');
-		buttonText = button.text().replace('\xE9', 'e').toLowerCase();
+		buttonText = button.text().replace('\xE9', 'e').replace('\xE9', 'e').toLowerCase();
 		newDiv = $('#' + buttonText + '-div');
 		oldDiv = $('.content-card.active');
 		if (newDiv.hasClass('active')) {
@@ -150,7 +150,7 @@ function openDiv(x) {
 			if (button.text() == 'About') {
 				translateHeight = 0;
 			}
-			else if (button.text() == 'Resum\xE9') {
+			else if (button.text() == 'R\xE9sum\xE9') {
 				translateHeight = resumeTrans;
 			}
 			else if (button.text() == 'Projects') {
