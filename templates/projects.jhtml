@@ -7,7 +7,9 @@
       <li>{{ descr }} (<span data-target='project-{{ id }}' class='project-link'>see more</span>).</li>
       {% if mobile %}
         <div class='project hidden-project' id='project-{{ id }}'>
-          {% include path %}
+          {% with fpath = "projects/" + path %}
+          {% include fpath %}
+          {% endwith %}
         </div>
         <hr>
       {% endif %}
@@ -17,7 +19,9 @@
   {% if not mobile %}
     {% for id, path, _ in config.projects %}
     <div class='project untoggled' id='project-{{ id }}'>
-      {% include path %}
+      {% with fpath = "projects/" + path %}
+      {% include fpath %}
+      {% endwith %}
     </div>
     {% endfor %}
   {% endif %}

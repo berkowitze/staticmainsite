@@ -24,11 +24,13 @@ class Config:
                  ]
 
     projects = [
+                ('citsci',
+                 'citsci.jhtml',
+                 'Web system for Bard College\'s Citizen Science program'),
                 ('grading-app',
                  'grading_app.jhtml',
                  'Grading app for computer science courses at Brown University [Flask]'
                  ),
-
                 ('exosim',
                  'exosim.jhtml',
                  'Create and observe your own solar system [p5.js]'

@@ -1,0 +1,4 @@
+color for header
+pictures in about section
+headers nicer
+link highlighting (unselectable div css)
