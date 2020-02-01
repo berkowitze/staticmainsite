@@ -71,10 +71,10 @@ class Config:
 rendered_template = template.render(config=Config, mobile=False)
 rendered_mobile = mobile_template.render(config=Config, mobile=True)
 
-with open('index.html', 'w') as f:
+with open('site/index.html', 'w') as f:
     f.write(rendered_template)
 
-with open('mobile.html', 'w') as f:
+with open('site/mobile.html', 'w') as f:
     f.write(rendered_mobile)
 
 print('recompiled')
