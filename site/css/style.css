@@ -1,3 +1,7 @@
+:root {
+    font-size: 16px;
+}
+
 /*General styles*/
 .absolute-hide {
     opacity: 0 !important;
@@ -12,7 +16,7 @@ body {
 #bg {
     position: absolute;
     z-index: -1;
-    background-image: linear-gradient(rgba(202,209,255,1), rgba(255,235,229,1));
+    background-image: linear-gradient(rgb(211, 217, 255), rgb(251, 235, 230));
     width: 100vw;
     height: 100vh;
 }
@@ -43,20 +47,20 @@ body {
 
 /*Name div styles*/
 .name-div {
-    font-size: 400%;
+    font-size: 4rem;
     color: black !important;
     text-align: center; 
 }
 
 #name-template {
-    font-size: 400%;
+    font-size: 4rem;
     text-align: center;
     display: inline-block;
 }
 
 .new-name-card {
     margin-top: .3em !important;
-    font-size: 250% !important;
+    font-size: 2.5rem !important;
     display: inline-block;
     margin-left: .7em !important;
 }
@@ -90,12 +94,12 @@ div#nav-container {
 }
 
 .nav-button {
-    font-size: 200%;
+    font-size: 2rem;
     color: black !important;
 }
 
 .nav-button-positioned {
-    font-size: 150%;
+    font-size: 1.5rem;
 }
 
 /*Nav buttons*/
@@ -218,6 +222,10 @@ ul#stuff-I-do li, ul#interests li {
     margin-left: 1.5em;
 }
 
+#stuff-I-do li {
+    list-style-type: '- ' !important;
+}
+
 .no-margin {
     margin-top: 0 !important;
     margin-bottom: 0 !important;
@@ -261,13 +269,14 @@ p.no-bottom-margin {
 
 span.project-link {
     text-decoration: underline;
+    cursor: pointer;
 }
 
-span.project-link:hover {
-    cursor: pointer;
+/* span.project-link { */
+    /* cursor: pointer; */
     /*opacity: 1;
     transition: opacity 1s linear;*/
-}
+/* } */
 
 .project.untoggled {
     /*max-height: 0px;*/
