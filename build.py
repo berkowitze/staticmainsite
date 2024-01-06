@@ -29,6 +29,11 @@ class Config:
     ]
 
     projects = [
+        #(
+         #   "downup",
+          #  "downup.jhtml",
+           # "Hobby website for small communities to do goal-oriented challenges together"
+#        ),
         (
             "citsci",
             "citsci.jhtml",

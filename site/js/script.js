@@ -1,4 +1,4 @@
-TESTING = true;
+TESTING = false;
 
 function typeWord(word, div, I1, I2, done, continueDelay) {
   letters = word.split("");

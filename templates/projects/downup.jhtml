@@ -1,0 +1,25 @@
+{% extends "project_base.jhtml" %}
+{% block title %}
+Downup
+{% endblock %}
+
+{% block content %}
+<p>
+  Website: <a href="downup.app">downup.app</a>
+</p>
+<p>
+  Downup is a website that enables small communities to do communal challenges. It is intentionally designed to reward
+  <i>goal completion</i>, and not <i>absolute completion</i>. This is to acknowledge that everyone is at different
+  places in their lives and has different goals. So, for a pushup challenge, each participant can choose their own daily
+  goal for how many pushups they want to do, and other people can only see their percent progress towards that goal,
+  <i>not</i> how many pushups they've done.
+</p>
+<p>The December 2023 pushup challenge had 63 participants and collectively totaled 48,468 pushups!</p>
+<p>
+  The site is made with React/Typescript, Next, Postgres, Redis, and Twilio.
+</p>
+<img src='media/downup.png' width="50%" height="50%" />
+</p>
+<p>
+</p>
+{% endblock %}
